@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="160" viewBox="0 0 1000 160" role="img" aria-labelledby="title desc">
+  <title id="title">Ghostty Superlogical tab style preview</title>
+  <desc id="desc">Three rounded terminal tabs on a dark terminal background, with the first tab selected as a glass pill.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#303640"/>
+      <stop offset="1" stop-color="#282c34"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity=".16"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity=".08"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-30%" width="140%" height="170%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#000000" flood-opacity=".18"/>
+    </filter>
+  </defs>
+  <rect width="1000" height="160" rx="18" fill="url(#background)"/>
+  <rect x="26" y="32" width="286" height="58" rx="29" fill="url(#glass)" filter="url(#shadow)"/>
+  <path d="M26 90H974" stroke="#ffffff" stroke-opacity=".04"/>
+  <g fill="#f1f3f5" font-family="system-ui, sans-serif" font-size="19" font-weight="500">
+    <text x="63" y="68">~/project — editor</text>
+    <text x="365" y="68" fill-opacity=".68">~/project — shell</text>
+    <text x="647" y="68" fill-opacity=".68">server — logs</text>
+  </g>
+  <g stroke="#f1f3f5" stroke-opacity=".58" stroke-width="1.5" stroke-linecap="round">
+    <path d="M278 57l10 10m0-10l-10 10"/>
+    <path d="M563 57l10 10m0-10l-10 10"/>
+    <path d="M818 57l10 10m0-10l-10 10"/>
+  </g>
+  <g fill="#f1f3f5" fill-opacity=".7">
+    <circle cx="48" cy="61" r="3"/>
+    <circle cx="350" cy="61" r="3"/>
+    <circle cx="632" cy="61" r="3"/>
+  </g>
+  <text x="42" y="126" fill="#f1f3f5" fill-opacity=".36" font-family="ui-monospace, monospace" font-size="15">terminal content</text>
+</svg>
